@@ -24,6 +24,10 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+defaults:
+  run:
+    working-directory: next-test
+
 jobs:
   # Build job
   build:
@@ -37,7 +41,6 @@ jobs:
         run: |
           pwd
           ls -l
-          cd next-test
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
