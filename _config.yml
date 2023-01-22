@@ -78,6 +78,8 @@ exclude:
 
 keep_files:
   - /kagoshima-rubykaigi01/
+  - /kagoshima-rubykaigi02/
+  - /next-test/
 
 # Front Matter Defaults
 defaults:
