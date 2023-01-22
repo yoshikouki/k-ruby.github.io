@@ -32,7 +32,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Current directory
-        run: cd next-test
+        run: |
+          pwd
+          echo $(pwd)
+          ls -l
+          echo $(ls)
+          cd next-test
       - name: Detect package manager
         id: detect-package-manager
         run: |
