@@ -13,6 +13,7 @@ on:
     paths-ignore:
       - "kagoshima-rubykaigi02/**"
       - "next-test/**"
+      - ".github/workflows/nextjs.yml"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
