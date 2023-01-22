@@ -31,8 +31,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Current directory
-        run: cd next-test
+        with:
+          path: next-test
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
