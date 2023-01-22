@@ -72,5 +72,9 @@ jobs:
           pwd
           ls -la
           ls -la out
+      - name: Configure git
+        run: |
+          git config --global user.email "yoshikouki@gmail.com"
+          git config --global user.name "yoshikouki"
       - name: Deploy to GitHub Pages
         run: npm run deploy
