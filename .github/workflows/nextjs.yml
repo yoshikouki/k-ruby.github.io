@@ -33,6 +33,11 @@ jobs:
         uses: actions/checkout@v3
         with:
           path: next-test
+      - name: Current directory
+        run: |
+          pwd
+          ls -l
+          cd next-test
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
